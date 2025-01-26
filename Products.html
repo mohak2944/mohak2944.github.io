@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-box {
+  margin-left: 20px;
+  position: relative;
+}
+
+.search-box input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-box button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: #333;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.products {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 16px;
+  color: #555;
+}
+
+.product button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>TechTrove Store</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Search products...">
+          <button onclick="searchProducts()">&#128269;</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+          
+  <main>
+    <section class="products">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="https://vsprod.vijaysales.com/media/catalog/product/s/a/samsung-galaxy-s24-ultra-titanium-black_1_.jpg?optimize=medium&fit=bounds&height=&width=" alt="Samsung galaxy s25 ultra">
+          <h3>Samsung galaxy s25 ultra</h3>
+          <p>  &#8377; 1,65,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://vsprod.vijaysales.com/media/catalog/product/2/3/237305-1_1_1__1.jpg?optimize=medium&fit=bounds&height=&width=" alt="Samsung galaxy s25+">
+          <h3>Samsung galaxy s25+</h3>
+          <p>&#8377;1,11,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://vsprod.vijaysales.com/media/catalog/product/2/3/237298_1_.jpg?optimize=medium&fit=bounds&height=&width=" alt="Samsung galaxy s25">
+          <h3>Samsung galaxy s25</h3>
+          <p>&#8377;80,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://vsprod.vijaysales.com/media/catalog/product/2/2/226518-image1_1.jpg?optimize=medium&fit=bounds&height=&width=" alt="Galaxy book 4 pro">
+          <h3>Galaxy book 4 pro</h3>
+          <p>&#8377;1,11,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://vsprod.vijaysales.com/media/catalog/product/2/2/226525-image1_1.jpg?optimize=medium&fit=bounds&height=&width=" alt="Galaxy book 4 pro 360">
+          <h3>Galaxy book 4 pro 360</h3>
+          <p>&#8377;1,19,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://www.91-img.com/gallery_images_uploads/d/1/d1d41a7587327bfdeccbf5c2a91b95ac81ffd565.jpg?tr=h-340,c-at_max,q-80,t-true" alt="Samsung galaxy  tab s10 ultra">
+          <h3>Samsung galaxy  tab s10 ultra</h3>
+          <p>&#8377;1.08,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://images.samsung.com/is/image/samsung/assets/in/tablets/galaxy-tab-s10/buy/S10-Plus_Color-Selection_Moonstone-Gray_PC_1600x864.png" alt="Samsung galaxy  tab s10+">
+          <h3>Samsung galaxy  tab s10+</h3>
+          <p>&#8377;90,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://images.news18.com/ibnlive/uploads/2024/09/samsung-galaxy-s10-tablet-2024-09-edc878695efbd0ec745942cad61378e9.png?impolicy=website&width=360&height=270" alt="Samsung galaxy tab s10">
+          <h3>Samsung galaxy tab s10</h3>
+          <p>&#8377;80,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKm5ZKCiyXfi3WotXZwd_nRPm1XHCWNK8Dg&s" alt="Samsung 247 cm 98 Inches 8K Ultra HD">
+          <h3>Samsung 247 cm 98 Inches 8K Ultra HD</h3>
+          <p>&#8377;39,89,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://images.samsung.com/is/image/samsung/p6pim/in/qa98qn990ckxxl/gallery/in-qled-98qn990c-qa98qn990ckxxl-538370616?$684_547_PNG$" alt="Samsung Neo QLED 8K AI TV">
+          <h3>Samsung Neo QLED 8K AI TV</h3>
+          <p>&#8377;8,29,999.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://images.samsung.com/is/image/samsung/assets/in/accessories/whats-new/CrossGBM_Accessories_Whatsnew_ZFold6SPenCase_PC.png?$330_N_PNG$" alt="Galaxy Z Fold6 S Pen Case">
+          <h3>Galaxy Z Fold6 S Pen Case</h3>
+          <p>&#8377;1,499.00</p>
+          <button>Add to Cart</button>
+         </div>
+        <div class="product">
+          <img src="https://images.samsung.com/is/image/samsung/assets/in/accessories/explore/CrossGBM_Accessories_Explore_ZFlip6Kindsuit_PC.png?$448_N_PNG$" alt="Galaxy Z Flip6 Kindsuit Case">
+          <h3>Galaxy Z Flip6 Kindsuit Case</h3>
+          <p>&#8377;1,499.00</p>
+          <button>Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src=" https://images.samsung.com/is/image/samsung/p6pim/in/2407/gallery/in-galaxy-buds3-pro-r630-sm-r630nzaainu-542134810?$684_547_PNG$
+        " alt="SAMSUNG Galaxy Buds 3 Pro ">
+          <h3>GSAMSUNG Galaxy Buds 3 Pro </h3>
+          <p>&#8377;19,999.00</p>
+          <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src=" https://images.samsung.com/is/image/samsung/p6pim/in/sm-r400nzaains/gallery/in-galaxy-buds-fe-480225-sm-r400nzaains-538531515?$684_547_PNG$" alt="SAMSUNG Galaxy Buds 3 Pro ">
+        <h3>SAMSUNG Galaxy Buds FE  </h3>
+        <p>&#8377;9,999.00</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.samsung.com/in/galaxy-buds3-pro/feature/galaxy-buds3-pro-new-design-video-endframe-mo.jpg?imbypass=true
+    " alt="SAMSUNG Galaxy Buds 3 Pro ">
+      <h3>SAMSUNG Galaxy Buds 3 Pro </h3>
+      <p>&#8377;19,999.00</p>
+      <button>Add to Cart</button>
+  </div>
+  
+      
+     
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Online Store. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
