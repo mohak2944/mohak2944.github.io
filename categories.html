@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - TechTrove Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav ul li {
+      margin-left: 15px;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+      height: 525px;
+    }
+
+    .categories {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .categories h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .category {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .category:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .category img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .category h3 {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>TechTrove Store</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="categories">
+      <h2>Our Categories</h2>
+      <div class="category-grid">
+        <div class="category">
+          <img src="https://vsprod.vijaysales.com/media/catalog/product/s/a/samsung-galaxy-s24-ultra-titanium-black_1_.jpg?optimize=medium&fit=bounds&height=&width=" alt="Smartphones">
+          <h3>Smartphones</h3>
+        </div>
+        <div class="category">
+          <img src="https://vsprod.vijaysales.com/media/catalog/product/2/2/226518-image1_1.jpg?optimize=medium&fit=bounds&height=&width=" alt="Laptops">
+          <h3>Laptops</h3>
+        </div>
+        <div class="category">
+          <img src="https://www.91-img.com/gallery_images_uploads/d/1/d1d41a7587327bfdeccbf5c2a91b95ac81ffd565.jpg?tr=h-340,c-at_max,q-80,t-true" alt="Tablets">
+          <h3>Tablets</h3>
+        </div>
+        <div class="category">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRKm5ZKCiyXfi3WotXZwd_nRPm1XHCWNK8Dg&s" alt="Televisions">
+          <h3>Televisions</h3>
+        </div>
+        <div class="category">
+          <img src="https://images.samsung.com/in/galaxy-buds3-pro/feature/galaxy-buds3-pro-new-design-video-endframe-mo.jpg?imbypass=true" alt="Accessories">
+          <h3>Accessories</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechTrove Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
